@@ -20,5 +20,9 @@ $valid = ($numero >= 1 && $numero <= 12);
       El número que has posat és <strong><?php echo $numero; ?></strong>
     </p>
   <?php else: ?>
+    <!--Crear la taula i el bucle for-->
+    <table border="1" cellpadding="8">
+      <?php for ($i = 1; $i <= 10; $i++): ?>
+  <?php endif; ?>
 </body>
 </html>
