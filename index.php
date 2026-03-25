@@ -23,7 +23,7 @@ $valid = ($numero >= 1 && $numero <= 12);
     <!--Crear la taula i el bucle for-->
     <table border="1" cellpadding="8">
       <?php for ($i = 1; $i <= 10; $i++): ?>
-      <!--Pintar cada fila amb el resultat de la mutliplicació -->
+      <!--IF per al numero parell o senar-->
       <?php
         if ($i % 2 == 0) {
           $color = "lightgray"; //fila parell de color gris
@@ -31,6 +31,7 @@ $valid = ($numero >= 1 && $numero <= 12);
           $color = "white"; //fila senar de color blanc
         }
       ?>
+      <!---->
   <?php endif; ?>
 </body>
 </html>
