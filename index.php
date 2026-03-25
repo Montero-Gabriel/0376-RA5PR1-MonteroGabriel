@@ -31,7 +31,16 @@ $valid = ($numero >= 1 && $numero <= 12);
           $color = "white"; //fila senar de color blanc
         }
       ?>
-      <!---->
+      <!--Pintar cada fila amb el color que li toqui-->
+      <tr bgcolor="<?php echo $color; ?>">
+        <td><?php echo $numero; ?></td>
+        <td>x</td>
+        <td><php echo $i; ?></td>
+        <td>=</td>
+        <td><?php echo $numero * $i; ?></td>
+      </tr>
+      <?php endfor; ?>
+    </table>
   <?php endif; ?>
 </body>
 </html>
